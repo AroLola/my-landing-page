@@ -19,16 +19,17 @@
         }
         .card {
             background-color: #ffffff;
-            max-width: 600px;
+            max-width: 800px; /* Expanded from 600px to prevent truncation */
             width: 100%;
-            padding: 40px 30px;
+            padding: 40px 40px; /* Added more side padding */
             text-align: center;
             border-radius: 16px;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             border: 1px solid #f3f4f6;
+            box-sizing: border-box;
         }
         h1 {
-            color: #2563eb;
+            color: #000000; /* Changed from blue to black */
             font-size: 32px;
             font-weight: 800;
             margin-top: 0;
@@ -41,21 +42,22 @@
         }
         .web-link {
             display: block;
-            color: #2563eb;
-            font-size: 38px; /* Giant font size */
+            color: #000000; /* Changed from blue to black */
+            font-size: 32px; /* Adjusted slightly down from 38px for a perfect fit */
             font-weight: 900;
             text-decoration: underline;
-            word-break: break-all;
+            word-break: keep-all; /* Prevents ugly mid-word line splits */
+            overflow-wrap: break-word; /* Safe fallback for small mobile screens */
             margin-bottom: 32px;
             line-height: 1.2;
         }
         .web-link:hover {
-            color: #1d4ed8;
+            color: #333333; /* Dark gray hover effect */
         }
         .footer-badge {
             display: inline-block;
-            background-color: #eff6ff;
-            color: #1d4ed8;
+            background-color: #f3f4f6; /* Changed from blue-tint to neutral light gray */
+            color: #4b5563; /* Changed from blue to neutral dark gray */
             font-weight: 600;
             padding: 8px 16px;
             border-radius: 9999px;
