@@ -4,20 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>We Have Moved</title>
-    <script src="https://jsdelivr.net"></script>
+    <style>
+        body {
+            background-color: #f9fafb;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #1f2937;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .card {
+            background-color: #ffffff;
+            max-width: 600px;
+            width: 100%;
+            padding: 40px 30px;
+            text-align: center;
+            border-radius: 16px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            border: 1px solid #f3f4f6;
+        }
+        h1 {
+            color: #2563eb;
+            font-size: 32px;
+            font-weight: 800;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+        .instruction {
+            color: #4b5563;
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+        .web-link {
+            display: block;
+            color: #2563eb;
+            font-size: 38px; /* Giant font size */
+            font-weight: 900;
+            text-decoration: underline;
+            word-break: break-all;
+            margin-bottom: 32px;
+            line-height: 1.2;
+        }
+        .web-link:hover {
+            color: #1d4ed8;
+        }
+        .footer-badge {
+            display: inline-block;
+            background-color: #eff6ff;
+            color: #1d4ed8;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 9999px;
+            font-size: 14px;
+        }
+    </style>
 </head>
-<body class="bg-gray-50 flex items-center justify-center min-h-screen text-gray-800">
-    <div class="max-w-xl w-full bg-white shadow-lg rounded-2xl p-8 text-center border border-gray-100">
-        <h1 class="text-3xl font-extrabold text-blue-600 mb-4">We have moved</h1>
-        <p class="text-gray-600 mb-4">Our new web address is:</p>
-        <p class="mb-8">
-            <a href="https://christslovechristianschool.info" class="text-3xl sm:text-4xl font-black text-blue-600 underline hover:text-blue-800 transition-colors duration-200 block break-all tracking-tight">
-                https://christslovechristianschool.info
-            </a>
-        </p>
-        <div class="inline-block bg-blue-50 text-blue-700 font-semibold px-4 py-2 rounded-full text-sm">
+<body>
+
+    <div class="card">
+        <h1>We have moved</h1>
+        <p class="instruction">Our new web address is:</p>
+        
+        <a href="https://christslovechristianschool.info" class="web-link">
+            https://christslovechristianschool.info
+        </a>
+        
+        <div class="footer-badge">
             © 2026 Christ's Love Christian School. All rights reserved.
         </div>
     </div>
+
 </body>
 </html>
